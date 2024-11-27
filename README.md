@@ -74,6 +74,8 @@ Use following line to start your program:
 
 `webcamExample.py`
 
+To stop execution, open terminal window, where from program was started, and press CTRL+C to stop execution.
+
 ### Part 5. Implementing MobileNet
 
 Do the steps of part 4, Webcam usage example, for the file 'MobileNet_implementation.py' from this repository.   
