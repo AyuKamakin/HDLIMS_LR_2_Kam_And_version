@@ -39,7 +39,7 @@ After activation, use the command `python` to start the Python environment.
 
 ### Part 3. Installing libraries
 There are some libraries that are required.     
-You can install them with the activated Python environment using the following command:   
+You can install them with using the following command:   
 `pip install someLibrary`  
 
 Libraries that are required:   
@@ -48,10 +48,6 @@ Libraries that are required:
 3. tensorflow   
 4. keras   
 5. scikit-learn
-
-After all libraries are installed, exit your activated python terminal using   
-
-`exit()`   
 
 ### Part 4. Webcam usage example   
 Check if terminal is opened in the python environment directory, where all needed libraries   
@@ -76,7 +72,24 @@ Use following line to start your program:
 
 To stop execution, open terminal window, where from program was started, and press CTRL+C to stop execution.
 
-### Part 5. Implementing MobileNet
+### Part 5. Creating spinning camera
+
+Download xml file containing information for face-detection model [here](https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml)   
+
+Move xml file to the python environment directory   
+
+Connect your GPIO peripherals as shown in the [guide](https://ul-cad.yonote.ru/share/HLIMDS_CAD_LR_02)   
+
+Led signal wire must be connected to BCM-numbered port 2, servomotor signal wire must be connected to BCM-numbered port 3,   
+button signal wire must be connected to BCM-numbered port 4.      
+
+Create file GPIO_main.py with the containtment of file with this name from this repository where the xml file is   
+
+Run script via   
+
+`GPIO_main.py`   
+
+### Part 6. Implementing MobileNet
 
 Do the steps of part 4, Webcam usage example, for the file 'MobileNet_implementation.py' from this repository.   
 
